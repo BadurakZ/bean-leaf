@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean &amp; Leaf — кофейня</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="logo" href="#top">Bean &amp; Leaf</a>
+      <ul class="nav-list">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#subscribe">Подписка</a></li>
+      </ul>
+      <a class="nav-cta" href="#subscribe">Заказать</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Свежий кофе и зелёный уют</h1>
+        <p>Обжариваем зерно каждую неделю, завариваем медленно и подаём с домашней выпечкой в самом сердце города.</p>
+        <a class="btn" href="#menu">Смотреть меню</a>
+      </div>
+      <span class="hero-badge">с 2014 года</span>
+      <img class="hero-img" src="images/Coffe.png" alt="Чашка кофе на деревянном столе">
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Наша история</h2>
+      <div class="about-grid">
+        <article class="about-story">
+          <h3>Про зерно</h3>
+          <p>Мы работаем с фермами Эфиопии, Колумбии и Гватемалы. Каждая партия обжаривается малыми объёмами, чтобы вы получили зерно в пике вкуса.</p>
+          <ul class="about-list">
+            <li>Ручная обжарка каждую неделю</li>
+            <li>Альтернативные методы заваривания</li>
+            <li>Дегустации по субботам</li>
+          </ul>
+        </article>
+        <aside class="about-facts">
+          <h3>Факты</h3>
+          <p>12 сортов арабики</p>
+          <p>40 мест в зале</p>
+          <p>4 десерта дня</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="menu" class="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">Популярное в меню</h2>
+      <div class="menu-grid">
+        <article class="card">
+          <img src="images/espresso.jpg" alt="Эспрессо">
+          <h3>Эспрессо</h3>
+          <p>Плотный, с ореховым послевкусием.</p>
+          <p class="price">180 ₽</p>
+        </article>
+        <article class="card">
+          <img src="images/flatwhite.jpg" alt="Флэт уайт">
+          <h3>Флэт уайт</h3>
+          <p>Двойное эспрессо и бархатное молоко.</p>
+          <p class="price">260 ₽</p>
+        </article>
+        <article class="card">
+          <img src="images/matchalatte.jpg" alt="Матча латте">
+          <h3>Матча латте</h3>
+          <p>Молодая матча и миндальное молоко.</p>
+          <p class="price">290 ₽</p>
+        </article>
+        <article class="card">
+          <img src="images/croissant.jpg" alt="Круассан">
+          <h3>Круассан</h3>
+          <p>Слоёный, на французском масле.</p>
+          <p class="price">150 ₽</p>
+        </article>
+        <article class="card">
+          <img src="images/coldbrew.jpg" alt="Колд брю">
+          <h3>Колд брю</h3>
+          <p>Холодная выдержка 18 часов.</p>
+          <p class="price">310 ₽</p>
+        </article>
+        <article class="card">
+          <img src="images/cheesecake.jpg" alt="Чизкейк">
+          <h3>Чизкейк</h3>
+          <p>Нежный крем на песочной основе.</p>
+          <p class="price">240 ₽</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="subscribe" class="subscribe" aria-labelledby="subscribe-title">
+      <h2 id="subscribe-title">Подпишитесь на новости</h2>
+      <p>Присылаем новые сорта, дегустации и скидки раз в две недели.</p>
+      <form class="form" action="#" method="post">
+        <div class="field">
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" placeholder="Никита" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="nikita@gmail.com" required>
+        </div>
+        <button type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h3>Bean &amp; Leaf</h3>
+      <p>Кофейня и обжарочный цех на Лесной, 12.</p>
+    </div>
+    <nav class="footer-col" aria-label="Навигация в подвале">
+      <h3>Разделы</h3>
+      <ul>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#subscribe">Подписка</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h3>Контакты</h3>
+      <ul>
+        <li><a href="tel:+70000000000">+7 000 000-00-00</a></li>
+        <li><a href="mailto:hi@beanleaf.ru">hi@beanleaf.ru</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
